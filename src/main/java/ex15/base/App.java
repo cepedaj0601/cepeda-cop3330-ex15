@@ -36,6 +36,19 @@ public class App {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-        
+        String password = "abc$123";
+
+        System.out.println("What is your username?");
+        String username = in.next();
+
+        System.out.println("What is the password?");
+        String input = in.next();
+
+        if(input.equals(password)){
+            System.out.printf("\nWelcome %s!", username);
+        }
+        else{
+            System.out.println("I don't know you.");
+        }
     }
 }
